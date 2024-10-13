@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Queue Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="hp-rd-h1">Message Queue Management</h1>
+        </header>
+
+        <section class="queue-section">
+            <h2>Queues</h2>
+            <div id="queue-list">
+                <!-- Queues will be dynamically populated here -->
+            </div>
+        </section>
+
+        <section class="action-section">
+            <h2>Retrieve Message</h2>
+            <select id="queue-selector">
+                <option value="" disabled selected>Select a queue</option>
+            </select>
+            <button id="go-btn">Go</button>
+
+            <div id="message-display">
+                <!-- Message from the queue will be displayed here -->
+            </div>
+        </section>
+
+        <section class="post-section">
+            <h2>Add Message to Queue</h2>
+            <input type="text" id="message-input" placeholder="Enter your message" />
+            <button id="post-btn">Add to Queue</button>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
