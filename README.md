@@ -4,6 +4,7 @@
 1. Clone the repository
 2. Install dependencies: `pip install Flask Flask-RESTful`
 3. Run the app: `python app.py`, the port will open on 8080
+4. open http://locahost:8080/
 
 
 ## Usage
